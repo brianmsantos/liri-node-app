@@ -1,6 +1,6 @@
 require("dotenv").config();
 const keys = require('./keys.js')
-let [node, liri, action, input] = process.argv
+let [node, liri, action, ...input] = process.argv
 let Twitter = require('twitter');
 let Spotify = require('node-spotify-api');
 let request = require('request');
